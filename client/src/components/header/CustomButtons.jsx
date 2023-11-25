@@ -18,6 +18,12 @@ const Wrapper = styled(Box)`
     font-size: 14px;
     align-items: center;
   }
+  @media only screen and (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
 `;
 const CartContainer = styled(Box)`
   display: flex;
@@ -54,8 +60,8 @@ const CustomButtons = () => {
         <ShoppingCartIcon />
         <Typography>Cart</Typography>
       </CartContainer>
-      <LoginDialog />;
-      <LoginDialog open={open} setOpen={setOpen} />;
+      <LoginDialog />
+      <LoginDialog open={open} setOpen={setOpen} />
     </Wrapper>
   );
 };
