@@ -22,7 +22,6 @@ const Text = styled(Typography)`
   font-family: inherit;
 `;
 const NavBar = () => {
-  navData;
   return (
     <Wrapper>
       {navData.map((data) => (
